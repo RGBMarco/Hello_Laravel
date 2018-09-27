@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hello</title>
+		<title>@yield('title','Sample')</title>
 	</head>
 	<body>
-		<h1>Hello, {{$name}}</h1>
+		@yield('content')
 	</body>
 </html>

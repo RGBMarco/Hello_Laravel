@@ -11,15 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/hello',function () {
-	return view('hello',['name' => 'Marco']);
-});
-
-Route::get('/user/{id}',function ($id) {
-	return view('user',['name' => $id]);
-})->name('profile');
-
+Route::get('/','StaticPagesController@home');
+Route::get('/help','StaticPagesController@help');
+Route::get('/about','StaticPagesController@about');
